@@ -1,80 +1,63 @@
-# Academic Project Page Template
+# SkillFlow Project Page
 
-> **Update (September 2025)**: This template has been modernized with better design, SEO, and mobile support. For the original version, see the [original-version branch](https://github.com/eliahuhorwitz/Academic-project-page-template/tree/original-version).
+This repository contains the project page for **SkillFlow: Benchmarking Lifelong Skill Discovery and Evolution for Autonomous Agents**.
 
-A clean, responsive template for academic project pages.
+The page is built as a lightweight static site based on the Academic Project Page Template and has been customized to present the SkillFlow benchmark, its core motivation, benchmark design, visual assets, main experimental results, and citation information.
 
+## Overview
 
-Example project pages built using this template are:
-- https://horwitz.ai/probex
-- https://vision.huji.ac.il/probegen
-- https://horwitz.ai/mother
-- https://horwitz.ai/spectral_detuning
-- https://vision.huji.ac.il/ladeda
-- https://vision.huji.ac.il/dsire
-- https://horwitz.ai/podd
-- https://dreamix-video-editing.github.io
-- https://horwitz.ai/conffusion
-- https://horwitz.ai/3d_ads/
-- https://vision.huji.ac.il/ssrl_ad
-- https://vision.huji.ac.il/deepsim
+The current page highlights:
 
+- the SkillFlow title, authors, affiliations, and benchmark summary
+- direct links to the GitHub project and HuggingFace dataset
+- benchmark visuals, including the overview figure, construction pipeline, taxonomy, and DAEF example
+- the main experimental results table
+- key findings from the paper
+- a BibTeX entry for citation
 
+## Project Structure
 
-## Start using the template
-To start using the template click on `Use this Template`.
+- `index.html`: main page content and section layout
+- `static/css/index.css`: custom styling for the project page
+- `static/js/index.js`: page interactions such as copy button, dropdown, and scroll-to-top behavior
+- `static/images/`: local image assets used by the page
 
-The template uses html for controlling the content and css for controlling the style. 
-To edit the websites contents edit the `index.html` file. It contains different HTML "building blocks", use whichever ones you need and comment out the rest.  
+Key image assets currently used include:
 
-**IMPORTANT!** Make sure to replace the `favicon.ico` under `static/images/` with one of your own, otherwise your favicon is going to be a dreambooth image of me.
+- `static/images/logo2.png`
+- `static/images/skillflow.png`
+- `static/images/data_pipeline.png`
+- `static/images/data_taxonomy.png`
+- `static/images/daef_example.png`
 
-## What's New
+## Local Preview
 
-- Modern, clean design with better mobile support
-- Improved SEO with proper meta tags and structured data
-- Performance improvements (lazy loading, optimized assets)
-- More Works dropdown
-- Copy button for BibTeX citations
-- Better accessibility
+You can preview the page locally with a simple static server:
 
-## Components
+```bash
+python3 -m http.server 8000
+```
 
-- Teaser video
-- Image carousel
-- YouTube video embedding
-- Video carousel
-- PDF poster viewer
-- BibTeX citation
+Then open:
 
-## Customization
+```bash
+http://127.0.0.1:8000
+```
 
-The HTML file has TODO comments showing what to replace:
+## External Links
 
-- Paper title, authors, institution, conference
-- Links (arXiv, GitHub, etc.)
-- Abstract and descriptions  
-- Videos, images, and PDFs
-- Related works in the dropdown
-- Meta tags for SEO and social sharing
+The current page includes the following public links:
 
-### Meta Tags
-The template includes meta tags for better search engine visibility and social media sharing. These appear in the `<head>` section and help with:
-- Google Scholar indexing
-- Social media previews (Twitter, Facebook, LinkedIn)
-- Search engine optimization
+- GitHub: `https://github.com/ZhangZi-a/SkillFlow`
+- HuggingFace: `https://huggingface.co/datasets/zhang-ziao/SkillFlow-Task`
 
-Create a 1200x630px social preview image at `static/images/social_preview.png`.
+## Notes
 
-## Tips
+- The favicon and page icon are both set to `logo2.png`.
+- The benchmark design section is currently text-only.
+- Visual resources are displayed directly as images rather than embedded PDFs.
+- The BibTeX block is formatted as a preprint entry.
 
-- Compress images with [TinyPNG](https://tinypng.com)
-- Use YouTube for large videos (>10MB)  
-- Replace the favicon in `static/images/`
-- Works with GitHub Pages
+## Acknowledgment
 
-## Acknowledgments
-Parts of this project page were adopted from the [Nerfies](https://nerfies.github.io/) page.
-
-## Website License
-<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+This project page is adapted from the [Academic Project Page Template](https://github.com/eliahuhorwitz/Academic-project-page-template), which was originally inspired by the [Nerfies](https://nerfies.github.io/) project page.
