@@ -51,13 +51,6 @@ The current page includes the following public links:
 - GitHub: `https://github.com/ZhangZi-a/SkillFlow`
 - HuggingFace: `https://huggingface.co/datasets/zhang-ziao/SkillFlow-Task`
 
-## Notes
-
-- The favicon and page icon are both set to `logo2.png`.
-- The benchmark design section is currently text-only.
-- Visual resources are displayed directly as images rather than embedded PDFs.
-- The BibTeX block is formatted as a preprint entry.
-
 ## Acknowledgment
 
 This project page is adapted from the [Academic Project Page Template](https://github.com/eliahuhorwitz/Academic-project-page-template), which was originally inspired by the [Nerfies](https://nerfies.github.io/) project page.
