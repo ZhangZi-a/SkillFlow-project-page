@@ -3,29 +3,30 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="title" content="SkillFlow: Benchmarking Lifelong Skill Discovery and Evolution for Autonomous Agents">
-  <meta name="description" content="SkillFlow is a benchmark for lifelong skill discovery and evolution in autonomous agents, featuring 166 tasks across 20 DAEF-structured families.">
-  <meta name="keywords" content="SkillFlow, benchmark, autonomous agents, lifelong learning, skill discovery, skill evolution, DAEF, preprint">
-  <meta name="author" content="Ziao Zhang, Kou Shi, Shiting Huang, Yu Zeng, Yiming Zhao, Zhen Fang, Zehui Chen, Qishen Su, Haibo Qiu, Wei Yang, Qingnan Ren, Shun Zou, Wenxuan Huang, Lin Chen, Feng Zhao">
+  <meta name="title" content="SKILLFLOW: Benchmarking Lifelong Skill Discovery and Evolution for Autonomous Agents">
+  <meta name="description" content="SKILLFLOW is a benchmark of 166 tasks across 20 workflow families and five domains for studying lifelong skill discovery, repair, and transfer in autonomous agents.">
+  <meta name="keywords" content="SKILLFLOW, benchmark, autonomous agents, lifelong learning, skill discovery, skill evolution, DAEF, workflow families, skill patches, docker evaluation">
+  <meta name="author" content="Ziao Zhang, Kou Shi, Shiting Huang, Avery Nie, Yu Zeng, Yiming Zhao, Zhen Fang, Qisheng Su, Haibo Qiu, Wei Yang, Qingnan Ren, Shun Zou, Wenxuan Huang, Lin Chen, Zehui Chen, Feng Zhao">
   <meta name="robots" content="index, follow">
   <meta name="language" content="English">
 
   <meta property="og:type" content="article">
   <meta property="og:site_name" content="SkillFlow Project Page">
-  <meta property="og:title" content="SkillFlow: Benchmarking Lifelong Skill Discovery and Evolution for Autonomous Agents">
-  <meta property="og:description" content="A benchmark of 166 tasks across 20 families for studying how autonomous agents discover, patch, and transfer skills over time.">
+  <meta property="og:title" content="SKILLFLOW: Benchmarking Lifelong Skill Discovery and Evolution for Autonomous Agents">
+  <meta property="og:description" content="A benchmark of 166 tasks across 20 workflow families and five domains for studying how autonomous agents discover, repair, and transfer skills over time.">
   <meta property="og:image" content="static/images/logo2.png">
   <meta property="og:image:alt" content="SkillFlow logo">
 
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="SkillFlow: Benchmarking Lifelong Skill Discovery and Evolution for Autonomous Agents">
-  <meta name="twitter:description" content="SkillFlow evaluates lifelong skill discovery, patching, and transfer in autonomous agents.">
+  <meta name="twitter:title" content="SKILLFLOW: Benchmarking Lifelong Skill Discovery and Evolution for Autonomous Agents">
+  <meta name="twitter:description" content="SKILLFLOW evaluates lifelong skill discovery, repair, and transfer in autonomous agents across 20 workflow families.">
   <meta name="twitter:image" content="static/images/logo2.png">
 
-  <meta name="citation_title" content="SkillFlow: Benchmarking Lifelong Skill Discovery and Evolution for Autonomous Agents">
+  <meta name="citation_title" content="SKILLFLOW: Benchmarking Lifelong Skill Discovery and Evolution for Autonomous Agents">
   <meta name="citation_author" content="Zhang, Ziao">
   <meta name="citation_author" content="Shi, Kou">
   <meta name="citation_author" content="Huang, Shiting">
+  <meta name="citation_author" content="Nie, Avery">
   <meta name="citation_publication_date" content="2026">
 
   <meta name="theme-color" content="#2563eb">
@@ -38,7 +39,7 @@
   <link rel="preconnect" href="https://ajax.googleapis.com">
   <link rel="preconnect" href="https://cdn.jsdelivr.net">
 
-  <title>SkillFlow | Lifelong Skill Discovery Benchmark</title>
+  <title>SKILLFLOW | Lifelong Skill Discovery Benchmark</title>
 
   <link rel="icon" type="image/png" href="static/images/logo2.png">
   <link rel="apple-touch-icon" href="static/images/logo2.png">
@@ -69,12 +70,24 @@
   {
     "@context": "https://schema.org",
     "@type": "ScholarlyArticle",
-    "headline": "SkillFlow: Benchmarking Lifelong Skill Discovery and Evolution for Autonomous Agents",
-    "description": "SkillFlow is a benchmark of 166 tasks across 20 families for evaluating lifelong skill discovery and evolution in autonomous agents.",
+    "headline": "SKILLFLOW: Benchmarking Lifelong Skill Discovery and Evolution for Autonomous Agents",
+    "description": "SKILLFLOW is a benchmark of 166 tasks across 20 workflow families and five broad domains for evaluating lifelong skill discovery and evolution in autonomous agents.",
     "author": [
       {"@type": "Person", "name": "Ziao Zhang"},
       {"@type": "Person", "name": "Kou Shi"},
       {"@type": "Person", "name": "Shiting Huang"},
+      {"@type": "Person", "name": "Avery Nie"},
+      {"@type": "Person", "name": "Yu Zeng"},
+      {"@type": "Person", "name": "Yiming Zhao"},
+      {"@type": "Person", "name": "Zhen Fang"},
+      {"@type": "Person", "name": "Qisheng Su"},
+      {"@type": "Person", "name": "Haibo Qiu"},
+      {"@type": "Person", "name": "Wei Yang"},
+      {"@type": "Person", "name": "Qingnan Ren"},
+      {"@type": "Person", "name": "Shun Zou"},
+      {"@type": "Person", "name": "Wenxuan Huang"},
+      {"@type": "Person", "name": "Lin Chen"},
+      {"@type": "Person", "name": "Zehui Chen"},
       {"@type": "Person", "name": "Feng Zhao"}
     ],
     "datePublished": "2026",
@@ -82,8 +95,8 @@
       "@type": "Organization",
       "name": "Preprint"
     },
-    "keywords": ["SkillFlow", "autonomous agents", "lifelong learning", "skill discovery", "skill evolution", "benchmark", "DAEF"],
-    "abstract": "SkillFlow studies whether autonomous agents can discover reusable skills from experience, patch them after failure, and transfer them across related tasks over time.",
+    "keywords": ["SKILLFLOW", "autonomous agents", "lifelong learning", "skill discovery", "skill evolution", "benchmark", "DAEF", "workflow families"],
+    "abstract": "SKILLFLOW studies whether autonomous agents can discover reusable skills from experience, repair them after failure, and transfer them across related tasks over time under an agentic lifelong learning protocol.",
     "isAccessibleForFree": true
   }
   </script>
@@ -110,7 +123,7 @@
         <a href="#overview" class="work-item">
           <div class="work-info">
             <h5>Overview</h5>
-            <p>See the benchmark motivation, abstract, and first-glance visual summary.</p>
+            <p>Read the motivation, abstract, and conceptual overview of the benchmark.</p>
             <span class="work-venue">Intro</span>
           </div>
           <i class="fas fa-arrow-right"></i>
@@ -118,7 +131,7 @@
         <a href="#visuals" class="work-item">
           <div class="work-info">
             <h5>Visuals</h5>
-            <p>Browse the benchmark construction pipeline, taxonomy, and DAEF examples.</p>
+            <p>See the dual-agent construction pipeline, domain taxonomy, and DAEF correspondence.</p>
             <span class="work-venue">Figures</span>
           </div>
           <i class="fas fa-arrow-right"></i>
@@ -126,7 +139,7 @@
         <a href="#results-table" class="work-item">
           <div class="work-info">
             <h5>Main Results</h5>
-            <p>Inspect the experimental results across different agents and models.</p>
+            <p>Inspect benchmark-level averages across 11 evaluated agent-model settings.</p>
             <span class="work-venue">Experiments</span>
           </div>
           <i class="fas fa-arrow-right"></i>
@@ -134,7 +147,7 @@
         <a href="#BibTeX" class="work-item">
           <div class="work-info">
             <h5>Citation</h5>
-            <p>Copy the preprint BibTeX entry.</p>
+            <p>Copy the updated BibTeX entry for the latest manuscript.</p>
             <span class="work-venue">Academic use</span>
           </div>
           <i class="fas fa-arrow-right"></i>
@@ -148,38 +161,44 @@
       <div class="hero-body">
         <div class="container is-max-desktop">
           <div class="paper-title-row">
-            <img src="static/images/logo2.png" alt="SkillFlow logo" class="paper-inline-logo" loading="eager">
-            <h1 class="title publication-title paper-inline-title">SkillFlow: Benchmarking Lifelong Skill Discovery and Evolution for Autonomous Agents</h1>
+            <img src="static/images/logo2.png" alt="SKILLFLOW logo" class="paper-inline-logo" loading="eager">
+            <h1 class="title publication-title paper-inline-title">SKILLFLOW: Benchmarking Lifelong Skill Discovery and Evolution for Autonomous Agents</h1>
           </div>
 
           <div class="has-text-centered hero-meta-block">
             <div class="is-size-6 publication-authors compact-authors">
-              <span class="author-block">Ziao Zhang</span>
-              <span class="author-block">Kou Shi</span>
-              <span class="author-block">Shiting Huang</span>
-              <span class="author-block">Yu Zeng</span>
-              <span class="author-block">Yiming Zhao</span>
-              <span class="author-block">Zhen Fang</span>
-              <span class="author-block">Zehui Chen</span>
-              <span class="author-block">Qishen Su</span>
-              <span class="author-block">Haibo Qiu</span>
-              <span class="author-block">Wei Yang</span>
-              <span class="author-block">Qingnan Ren</span>
-              <span class="author-block">Shun Zou</span>
-              <span class="author-block">Wenxuan Huang</span>
-              <span class="author-block">Lin Chen</span>
-              <span class="author-block">Feng Zhao</span>
+              <span class="author-block">Ziao Zhang<sup>1</sup></span>
+              <span class="author-block">Kou Shi<sup>1</sup></span>
+              <span class="author-block">Shiting Huang<sup>1</sup></span>
+              <span class="author-block">Avery Nie<sup>2</sup></span>
+              <span class="author-block">Yu Zeng<sup>1</sup></span>
+              <span class="author-block">Yiming Zhao<sup>1</sup></span>
+              <span class="author-block">Zhen Fang<sup>1</sup></span>
+              <span class="author-block">Qisheng Su<sup>1</sup></span>
+              <span class="author-block">Haibo Qiu<sup>3</sup></span>
+              <span class="author-block">Wei Yang<sup>1</sup></span>
+              <span class="author-block">Qingnan Ren<sup>1</sup></span>
+              <span class="author-block">Shun Zou<sup>1</sup></span>
+              <span class="author-block">Wenxuan Huang<sup>1</sup></span>
+              <span class="author-block">Lin Chen<sup>1</sup></span>
+              <span class="author-block">Zehui Chen<sup>1</sup></span>
+              <span class="author-block">Feng Zhao<sup>1*</sup></span>
             </div>
 
             <div class="publication-authors hero-affiliation-row">
-              <span class="author-block">University of Science and Technology of China</span>
+              <span class="author-block"><sup>1</sup> University of Science and Technology of China</span>
               <span class="author-sep">|</span>
-              <span class="author-block">Preprint 2026</span>
+              <span class="author-block"><sup>2</sup> University of Toronto</span>
+              <span class="author-sep">|</span>
+              <span class="author-block"><sup>3</sup> University of Sydney</span>
+            </div>
+            <div class="publication-authors hero-affiliation-row">
+              <span class="author-block"><sup>*</sup> Corresponding author</span>
             </div>
 
             <p class="hero-tagline narrow">
-              A benchmark for studying whether autonomous agents can discover reusable skills from experience,
-              patch them after failure, and transfer them across related tasks under a lifelong evaluation protocol.
+              SKILLFLOW studies whether autonomous agents can externalize experience into reusable skills,
+              repair those skills after failure, and maintain a compact high-utility library over time.
             </p>
 
             <div class="publication-links hero-action-row">
@@ -199,8 +218,8 @@
 
             <div class="hero-metric-row">
               <div class="metric-pill"><strong>166</strong><span>tasks</span></div>
-              <div class="metric-pill"><strong>20</strong><span>families</span></div>
-              <div class="metric-pill"><strong>DAEF</strong><span>workflow skeleton</span></div>
+              <div class="metric-pill"><strong>20</strong><span>workflow families</span></div>
+              <div class="metric-pill"><strong>5</strong><span>broad domains</span></div>
               <div class="metric-pill accent"><strong>+8.43</strong><span>best completion gain</span></div>
             </div>
           </div>
@@ -214,19 +233,19 @@
           <div class="column is-5">
             <h2 class="title is-3">Why SkillFlow</h2>
             <p class="section-intro">
-              Most agent benchmarks test whether a model can use a provided skill. SkillFlow asks a more realistic question:
-              can an agent solve a task, externalize the lesson into a reusable artifact, patch that artifact after future failures,
-              and carry the improved skill library forward across a sequence of related tasks?
+              Most agent benchmarks stop at asking whether a model can consume a provided skill. SKILLFLOW asks a harder and more realistic question:
+              can an agent solve a task, distill the lesson into a reusable skill artifact, repair that skill after later failures,
+              and carry a better library forward through a family of related tasks?
             </p>
             <div class="callout-box">
-              <strong>Core idea.</strong> SkillFlow organizes tasks by a shared <strong>Domain-Agnostic Execution Flow (DAEF)</strong>,
-              making it possible to evaluate procedural transfer rather than topic-level memorization.
+              <strong>Core idea.</strong> SKILLFLOW organizes 166 tasks into 20 workflow families across five domains, all grounded by
+              <strong>Domain-Agnostic Execution Flow (DAEF)</strong> so that transfer is measured at the level of reusable procedure rather than topical overlap.
             </div>
           </div>
           <div class="column is-7">
             <figure class="image-card hero-figure-card">
               <img src="static/images/skillflow.png" alt="SkillFlow conceptual overview" loading="eager">
-              <figcaption>The main SkillFlow overview figure highlights lifelong skill discovery, patching, and transfer under a unified evaluation protocol.</figcaption>
+              <figcaption>The overview contrasts conventional static-skill evaluation with SKILLFLOW's lifelong setting, where agents externalize experience into reusable artifacts, revise them through patches, and transfer them across tasks that share a common DAEF.</figcaption>
             </figure>
           </div>
         </div>
@@ -243,10 +262,10 @@
                 As the capability frontier of autonomous agents continues to expand, they are increasingly able to complete specialized tasks through plug-and-play external skills. Yet current benchmarks mostly test whether models can use provided skills, leaving open whether they can discover skills from experience, repair them after failure, and maintain a coherent library over time.
               </p>
               <p>
-                SkillFlow is a benchmark of <strong>166 tasks across 20 families</strong> organized by shared <strong>Domain-Agnostic Execution Flow (DAEF)</strong>, where each DAEF provides a workflow skeleton for systematic evaluation of cross-domain procedural transfer. Under the proposed <strong>Agentic Lifelong Learning</strong> protocol, agents begin without skills, solve tasks sequentially within each family, externalize lessons through trajectory- and rubric-driven skill patches, and carry the updated library forward.
+                SKILLFLOW is a benchmark of <strong>166 tasks across 20 workflow families</strong> in which task construction follows a shared <strong>Domain-Agnostic Execution Flow (DAEF)</strong>. Under the proposed <strong>Agentic Lifelong Learning</strong> protocol, agents begin without skills, solve tasks sequentially within each family, externalize lessons through trajectory- and rubric-driven skill patches, and carry the updated library forward.
               </p>
               <p>
-                Experiments reveal a clear but fragile abstraction gap. For Claude Opus 4.6, lifelong skill evolution improves task success from <strong>62.65%</strong> to <strong>71.08%</strong>. However, high skill usage does not necessarily imply high utility: Kimi K2.5 gains only 0.60 points despite 66.87% skill usage, and Qwen-Coder-next slightly regresses.
+                Experiments reveal <strong>selective rather than universal gains</strong>. Claude Opus 4.6 improves from <strong>62.65%</strong> to <strong>71.08%</strong> task completion, but high skill usage does not automatically mean high utility: Kimi K2.5 gains only <strong>+0.60</strong> despite <strong>66.87%</strong> skill usage, while both Qwen-Coder-Next and Qwen3-Coder-480B regress under skill evolution.
               </p>
             </div>
           </div>
@@ -258,20 +277,20 @@
       <div class="container is-max-desktop">
         <h2 class="title is-3 has-text-centered">Benchmark Visuals</h2>
         <p class="section-intro has-text-centered wide-intro">
-          SkillFlow is constructed through a rigorous pipeline that ensures task validity, difficulty calibration, and domain diversity. The benchmark is organized around Domain-Agnostic Execution Flows (DAEFs) to systematically evaluate procedural transfer.
+          These figures summarize the dual-agent construction pipeline, the five-domain benchmark taxonomy, and the DAEF correspondences that let SKILLFLOW study procedural transfer beyond surface-level domain overlap.
         </p>
         <div class="visual-grid">
           <figure class="image-card visual-card wide">
             <img src="static/images/data_pipeline.png" alt="SkillFlow construction pipeline" loading="lazy">
-            <figcaption>Benchmark construction pipeline: seed collection, skill matching, domain expansion, validation, and human review.</figcaption>
+            <figcaption>The dual-agent construction pipeline starts from seed tasks and curated skills, expands new families under a fixed DAEF, and filters them through Docker-grounded validation plus human review.</figcaption>
           </figure>
           <figure class="image-card visual-card">
             <img src="static/images/data_taxonomy.png" alt="SkillFlow data taxonomy" loading="lazy">
-            <figcaption>Task taxonomy showing how benchmark content is distributed across domains and families.</figcaption>
+            <figcaption>SKILLFLOW spans five broad domains and 20 workflow families, giving the benchmark both topical breadth and repeated opportunities for skill transfer within each family.</figcaption>
           </figure>
           <figure class="image-card visual-card">
             <img src="static/images/daef_example.png" alt="DAEF example" loading="lazy">
-            <figcaption>A DAEF example illustrating how workflow skeletons remain stable while domain surface details change.</figcaption>
+            <figcaption>A DAEF example shows how the same abstract workflow can survive major changes in files, entities, and business semantics while still supporting reusable skill transfer.</figcaption>
           </figure>
         </div>
       </div>
@@ -279,30 +298,30 @@
 
     <section class="section" id="results">
       <div class="container is-max-desktop">
-        <h2 class="title is-3 has-text-centered">What SkillFlow Measures</h2>
+        <h2 class="title is-3 has-text-centered">What the Benchmark Tracks</h2>
         <p class="section-intro has-text-centered">
-          The benchmark evaluates the full skill lifecycle rather than isolated tool use.
+          SKILLFLOW reports both outcome and process: whether agents solve tasks, how efficiently they do so, and how their skill libraries evolve under sequential evaluation.
         </p>
         <div class="snapshot-grid">
           <div class="snapshot-card">
-            <div class="snapshot-icon"><i class="fas fa-seedling"></i></div>
-            <h3>Skill Discovery</h3>
-            <p>Can the agent distill reusable procedures from solved trajectories without external supervision?</p>
+            <div class="snapshot-icon"><i class="fas fa-check-circle"></i></div>
+            <h3>Task Success Rate</h3>
+            <p>The primary score is whether the final output satisfies the verifier, giving a clean measure of end-to-end task completion.</p>
           </div>
           <div class="snapshot-card">
-            <div class="snapshot-icon"><i class="fas fa-wrench"></i></div>
-            <h3>Skill Patching</h3>
-            <p>Can later failures revise an existing skill rather than create fragmented memories?</p>
+            <div class="snapshot-icon"><i class="fas fa-tachometer-alt"></i></div>
+            <h3>Efficiency</h3>
+            <p>SKILLFLOW also reports interaction turns, monetary cost, and output tokens to show whether gains come with better or worse execution efficiency.</p>
           </div>
           <div class="snapshot-card">
-            <div class="snapshot-icon"><i class="fas fa-random"></i></div>
-            <h3>Cross-Task Transfer</h3>
-            <p>Can learned procedures transfer across tasks that share the same workflow skeleton?</p>
+            <div class="snapshot-icon"><i class="fas fa-book-open"></i></div>
+            <h3>Skill Generation and Reuse</h3>
+            <p>Each setting tracks how many skills survive in the final family-local library and how often previously written skills are actually reused later.</p>
           </div>
           <div class="snapshot-card">
-            <div class="snapshot-icon"><i class="fas fa-folder-open"></i></div>
-            <h3>Library Maintenance</h3>
-            <p>Can the evolving skill library stay compact, valid, and useful over time?</p>
+            <div class="snapshot-icon"><i class="fas fa-sync-alt"></i></div>
+            <h3>Family-Local Transfer</h3>
+            <p>Tasks follow a fixed order within each workflow family, making every improvement or regression traceable to how well lessons move forward under a shared DAEF.</p>
           </div>
         </div>
       </div>
@@ -312,7 +331,7 @@
       <div class="container is-max-fullhd results-table-container">
         <h2 class="title is-3 has-text-centered">Main Experimental Results</h2>
         <p class="section-intro has-text-centered wide-intro">
-          Benchmark-level averages from the main evaluation. The strongest fully analyzed setting is Claude Code with Opus 4.6, which improves from 62.65% to 71.08% completion under lifelong skill evolution.
+          Table 1 reports benchmark-level averages for 11 model variants across Claude Code, Codex CLI, Qwen Coder, and Kimi CLI. The clearest positive case is Claude Opus 4.6, which improves from 62.65% to 71.08% completion under lifelong skill evolution.
         </p>
         <div class="table-card centered-table-card">
           <div class="table-legend">
@@ -383,7 +402,7 @@
                 <tr>
                   <td>MiniMax M2.7</td>
                   <td>37.35</td><td>25.44</td><td>0.012</td><td>0.5</td>
-                  <td>36.75</td><td>27.42</td><td>0.017</td><td>0.96</td><td>4.6</td><td>51.2</td>
+                  <td>36.75</td><td>27.42</td><td>0.017</td><td>0.96</td><td>4.65</td><td>51.2</td>
                   <td class="delta-bad">▼ 0.60</td><td class="delta-bad">▲ 1.98</td><td class="delta-bad">▲ 41.67%</td><td class="delta-bad">▲ 92%</td>
                 </tr>
                 <tr>
@@ -396,7 +415,7 @@
                 <tr>
                   <td>GPT 5.3 Codex</td>
                   <td>52.41</td><td>17.74</td><td>0.492</td><td>6.8</td>
-                  <td>46.39</td><td>17.14</td><td>0.434</td><td>43.4</td><td>1.1</td><td>84.94</td>
+                  <td>46.39</td><td>17.14</td><td>0.434</td><td>6.82</td><td>1.1</td><td>84.94</td>
                   <td class="delta-bad">▼ 6.02</td><td class="delta-good">▼ 0.60</td><td class="delta-good">▼ 11.79%</td><td class="delta-bad">▲ 0.29%</td>
                 </tr>
                 <tr>
@@ -428,27 +447,37 @@
 
     <section class="section">
       <div class="container is-max-desktop">
-        <h2 class="title is-3 has-text-centered">Headline Findings</h2>
+        <h2 class="title is-3 has-text-centered">Main Findings</h2>
         <div class="insight-grid">
           <div class="insight-card">
             <span class="insight-badge">Finding 1</span>
-            <h3>Strong gains exist, but they are not universal</h3>
-            <p>Claude Opus 4.6 improves from 104/166 completed tasks to 118/166, showing that iterative skill evolution can materially improve real agent performance.</p>
+            <h3>Opus 4.6 is the clearest positive case</h3>
+            <p>Claude Opus 4.6 rises from 104/166 to 118/166 solved tasks, and a history-only control reaches just 51.04%, suggesting the gain comes from structured skill externalization rather than longer context alone.</p>
           </div>
           <div class="insight-card">
             <span class="insight-badge">Finding 2</span>
-            <h3>Usage does not equal utility</h3>
-            <p>Some models frequently read skills yet gain little or even regress, revealing a gap between accessing a skill and integrating it into action planning.</p>
+            <h3>Bad skills can create downstream drift</h3>
+            <p>Once an incorrect abstraction is written into the library, later tasks may inherit the same mistake, turning a local failure into a sequence-level pattern.</p>
           </div>
           <div class="insight-card">
             <span class="insight-badge">Finding 3</span>
-            <h3>Transfer is highly family-specific</h3>
-            <p>Gains are largest when tasks share a stable reusable workflow skeleton and smaller when bottlenecks come from perception, OCR, or brittle formatting checks.</p>
+            <h3>Compact evolving skills beat fragmented ones</h3>
+            <p>The strongest libraries are built around a small number of repeatedly repaired high-utility skills, not a pile of narrowly scoped task-by-task memories.</p>
           </div>
           <div class="insight-card">
             <span class="insight-badge">Finding 4</span>
-            <h3>Failure modes remain an essential research target</h3>
-            <p>Even with better completion, models still suffer from fragmentation, contamination, and utility-usage mismatch, showing that skill evolution is powerful but fragile.</p>
+            <h3>Qwen and part of MiniMax suffer from skill inflation</h3>
+            <p>Several weaker settings keep adding overlapping skills almost monotonically with task index, yet still fail to convert that growth into benchmark-level gains.</p>
+          </div>
+          <div class="insight-card">
+            <span class="insight-badge">Finding 5</span>
+            <h3>Codex stays compact, but compactness is not enough</h3>
+            <p>Codex often consolidates nearby variants into a shared evolving core skill, but that organizational strength alone does not match the strongest end-to-end gains.</p>
+          </div>
+          <div class="insight-card">
+            <span class="insight-badge">Finding 6</span>
+            <h3>Repairing bad skills is harder than writing them</h3>
+            <p>Most models can write something after a task, but the real gap is whether they can recognize a flawed skill, repair it, and obtain better behavior on later tasks.</p>
           </div>
         </div>
       </div>
@@ -460,10 +489,10 @@
           <div class="column is-four-fifths">
             <h2 class="title is-3 has-text-centered">Benchmark Design</h2>
             <ul class="feature-list">
-              <li><strong>DAEF-structured families:</strong> tasks are grouped by shared workflow topology, not shallow domain overlap.</li>
-              <li><strong>Sequential evaluation:</strong> agents begin with an empty library and evolve skills family by family.</li>
-              <li><strong>Patch-based memory updates:</strong> lessons are written into explicit artifacts organized in a general-purpose skill structure.</li>
-              <li><strong>Docker-based closed evaluation:</strong> tasks run inside controlled containerized test environments, making skill transfer measurable under consistent execution constraints.</li>
+              <li><strong>DAEF-structured workflow families:</strong> tasks are grouped by shared executable topology rather than shallow domain overlap.</li>
+              <li><strong>Family-local curricula:</strong> agents start with an empty library, follow a fixed within-family difficulty order, and reset the library across different workflows.</li>
+              <li><strong>Auditable skill patches:</strong> every update records a summary plus <code>upsert_files</code> and <code>delete_paths</code>, making repair and uncontrolled growth directly inspectable.</li>
+              <li><strong>Docker-based closed evaluation:</strong> tasks run inside controlled containerized environments, so transfer is measured under stable execution constraints instead of open-world drift.</li>
             </ul>
           </div>
         </div>
@@ -480,8 +509,8 @@
           </button>
         </div>
         <pre id="bibtex-code"><code>@article{zhang2026skillflow,
-  title={SkillFlow: Benchmarking Lifelong Skill Discovery and Evolution for Autonomous Agents},
-  author={Zhang, Ziao and Shi, Kou and Huang, Shiting and Zeng, Yu and Zhao, Yiming and Fang, Zhen and Chen, Zehui and Su, Qishen and Qiu, Haibo and Yang, Wei and Ren, Qingnan and Zou, Shun and Huang, Wenxuan and Chen, Lin and Zhao, Feng},
+  title={SKILLFLOW: Benchmarking Lifelong Skill Discovery and Evolution for Autonomous Agents},
+  author={Zhang, Ziao and Shi, Kou and Huang, Shiting and Nie, Avery and Zeng, Yu and Zhao, Yiming and Fang, Zhen and Su, Qisheng and Qiu, Haibo and Yang, Wei and Ren, Qingnan and Zou, Shun and Huang, Wenxuan and Chen, Lin and Chen, Zehui and Zhao, Feng},
   journal={arXiv preprint},
   year={2026}
 }</code></pre>
@@ -495,7 +524,7 @@
         <div class="column is-8">
           <div class="content has-text-centered">
             <p>
-              This page showcases <strong>SkillFlow</strong>, a benchmark for lifelong skill discovery and evolution in autonomous agents,
+              This page presents <strong>SKILLFLOW</strong>, a benchmark of 166 tasks across 20 workflow families for studying lifelong skill discovery and evolution in autonomous agents,
               and is adapted from the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a>.
             </p>
           </div>
